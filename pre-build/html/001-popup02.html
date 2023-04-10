@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    @@include('include/head.html') 
+</head>
+<body>
+
+    <div id="wrap">
+        <!--header-->
+        <header id="header">
+            @@include('include/header.html')
+        </header>
+        <!--header-->
+
+        <!--container-->
+        <main id="container">
+            <div class="setTit">
+                <div class="title">
+                    <h2>초기설정 관리</h2>
+                </div>
+            </div>
+            <div id="content">
+                <div id="lnb">
+                    <div class="lnbTit">
+                        <p>3D지도 관리</p>
+                    </div>
+                    <div class="lnbCont">
+                        <ul>
+                            <li class="active"><a href="#none">초기설정 관리</a></li>
+                            <li><a href="#none">레이어 관리</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="cont">
+                    <div class="tabCont">
+                        <div class="tabNav">
+                            <ul class="tabList">
+                                <li class="active">전체</li>
+                                <li>내설정</li>
+                                <li>공유</li>
+                            </ul>
+                        </div>
+                        <div class="tabBox">
+                            <div class="box active">
+                                <div class="btnArea end">
+                                    <button type="button" class="type01 bgTrans" title="등록"><span>등록</span></button>
+                                </div>
+                                <div class="table hover">
+                                    <table>
+                                        <caption>초기설정 관리의 전체표로 순번, 설정명, 설정적용, 등록자, 등록일을 제공합니다</caption>
+                                        <colgroup>
+                                            <col style="width: 100px;">
+                                            <col style="width: auto;">
+                                            <col style="width: 150px;">
+                                            <col style="width: 150px;">
+                                            <col style="width: 150px;">
+                                        </colgroup>
+                                        <thead>
+                                            <tr>
+                                                <th scope="col">순번</th>
+                                                <th scope="col">설정명</th>
+                                                <th scope="col">설정적용</th>
+                                                <th scope="col">등록자</th>
+                                                <th scope="col">등록일</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>1</td>
+                                                <td>경관분석 초기 설정</td>
+                                                <td>
+                                                    <img src="../images/common/ico-yes.svg" alt="적용함">
+                                                </td>
+                                                <td>홍길동</td>
+                                                <td>2022-09-13</td>
+                                            </tr>
+                                            <tr>
+                                                <td>2</td>
+                                                <td>경관분석 초기 설정</td>
+                                                <td>
+                                                    <img src="../images/common/ico-yes.svg" alt="적용함">
+                                                </td>
+                                                <td>홍길동</td>
+                                                <td>2022-09-13</td>
+                                            </tr>
+                                            <tr>
+                                                <td>3</td>
+                                                <td>경관분석 초기 설정</td>
+                                                <td>
+                                                    <img src="../images/common/ico-yes.svg" alt="적용함">
+                                                </td>
+                                                <td>홍길동</td>
+                                                <td>2022-09-13</td>
+                                            </tr>
+                                            <tr>
+                                                <td>4</td>
+                                                <td>경관분석 초기 설정</td>
+                                                <td>
+                                                    <img src="../images/common/ico-yes.svg" alt="적용함">
+                                                </td>
+                                                <td>홍길동</td>
+                                                <td>2022-09-13</td>
+                                            </tr>
+                                            <tr>
+                                                <td>5</td>
+                                                <td>경관분석 초기 설정</td>
+                                                <td>
+                                                    <img src="../images/common/ico-yes.svg" alt="적용함">
+                                                </td>
+                                                <td>홍길동</td>
+                                                <td>2022-09-13</td>
+                                            </tr>
+                                            <tr>
+                                                <td>6</td>
+                                                <td>경관분석 초기 설정</td>
+                                                <td>
+                                                    <img src="../images/common/ico-yes.svg" alt="적용함">
+                                                </td>
+                                                <td>홍길동</td>
+                                                <td>2022-09-13</td>
+                                            </tr>
+                                            <tr>
+                                                <td>7</td>
+                                                <td>경관분석 초기 설정</td>
+                                                <td>
+                                                    <img src="../images/common/ico-yes.svg" alt="적용함">
+                                                </td>
+                                                <td>홍길동</td>
+                                                <td>2022-09-13</td>
+                                            </tr>
+                                            <tr>
+                                                <td>8</td>
+                                                <td>경관분석 초기 설정</td>
+                                                <td>
+                                                    <img src="../images/common/ico-yes.svg" alt="적용함">
+                                                </td>
+                                                <td>홍길동</td>
+                                                <td>2022-09-13</td>
+                                            </tr>
+                                            <tr>
+                                                <td>9</td>
+                                                <td>경관분석 초기 설정</td>
+                                                <td>
+                                                    <img src="../images/common/ico-yes.svg" alt="적용함">
+                                                </td>
+                                                <td>홍길동</td>
+                                                <td>2022-09-13</td>
+                                            </tr>
+                                            <tr>
+                                                <td>10</td>
+                                                <td>경관분석 초기 설정</td>
+                                                <td>
+                                                    <img src="../images/common/ico-yes.svg" alt="적용함">
+                                                </td>
+                                                <td>홍길동</td>
+                                                <td>2022-09-13</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    <div class="pagination">
+                                        <button type="button" class="btnFirst" title="맨앞으로">
+                                            <span class="hidden">맨앞으로</span>
+                                        </button>
+                                        <button type="button" class="btnPrev" title="이전페이지">
+                                            <span class="hidden">이전페이지</span>
+                                        </button>
+                                        <a href="#" class="active" title="1">1</a>
+                                        <a href="#" title="2">2</a>
+                                        <a href="#" title="3">3</a>
+                                        <a href="#" title="4">4</a>
+                                        <a href="#" title="5">5</a>
+                                        <a href="#" title="6">6</a>
+                                        <a href="#" title="7">7</a>
+                                        <a href="#" title="8">8</a>
+                                        <a href="#" title="9">9</a>
+                                        <a href="#" title="10">10</a>
+                                        <button type="button" class="btnNext" title="다음페이지">
+                                            <span class="hidden">다음페이지</span>
+                                        </button>
+                                        <button type="button" class="btnLast" title="맨뒤로">
+                                            <span class="hidden">맨뒤로</span>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="box">내설정 내용</div>
+                            <div class="box">공유 내용</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <!--//container-->
+
+        <!--footer-->
+        <footer id="footer">
+            @@include('include/footer.html')
+        </footer>
+        <!--//footer-->
+    </div>
+
+
+    <!-- 초기 설정 수정 팝업 -->
+    <acticle class="popup" style="width: 610px; left: 1080px; top: 260px;">
+        <div class="popupHead">
+            <div class="headTit">
+                <p>초기 설정 수정</p>
+            </div>
+            <button type="button" class="cloBtn"><span class="hidden">팝업 닫기</span></button>
+        </div>
+        <div class="popupCont type02">
+            <div class="col2">
+                <div class="layerCont">
+                    <div class="layerDep">
+                        <ul class="layerDeps01">
+                            <li>
+                                <div class="layerDiv">
+                                    <p class="layerName">고도레이어</p>
+                                    <div class="layerSys">
+                                        <button type="button" class="depsCon"><span class="hidden">펼치기</span></button>
+                                        <button type="button" class="depsSwitch"><span class="hidden">보이기</span></button>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="layerDep">
+                        <ul class="layerDeps01">
+                            <li>
+                                <div class="layerDiv">
+                                    <p class="layerName">2.5D 건물</p>
+                                    <div class="layerSys">
+                                        <button type="button" class="depsCon"><span class="hidden">펼치기</span></button>
+                                        <button type="button" class="depsSwitch"><span class="hidden">보이기</span></button>
+                                    </div>
+                                </div>
+                                <ul class="layerDeps02">
+                                    <li>
+                                        <div class="layerDiv">
+                                            <p>주거업무시설</p>
+                                            <div class="layerSys">
+                                                <button type="button" class="depsCon"><span class="hidden">펼치기</span></button>
+                                                <button type="button" class="depsSwitch"><span class="hidden">보이기</span></button>
+                                            </div>
+                                        </div>
+                                        <ul class="layerDeps03">
+                                            <li>
+                                                <div class="layerDiv">
+                                                    <p>단독주택</p>
+                                                    <div class="layerSys">
+                                                        <button type="button" class="depsCon"><span class="hidden">펼치기</span></button>
+                                                        <button type="button" class="depsSwitch"><span class="hidden">보이기</span></button>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="layerDiv">
+                                                    <p>공동주택</p>
+                                                    <div class="layerSys">
+                                                        <button type="button" class="depsCon"><span class="hidden">펼치기</span></button>
+                                                        <button type="button" class="depsSwitch"><span class="hidden">보이기</span></button>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="layerDiv">
+                                                    <p>교정 및 군사시설</p>
+                                                    <div class="layerSys">
+                                                        <button type="button" class="depsCon"><span class="hidden">펼치기</span></button>
+                                                        <button type="button" class="depsSwitch"><span class="hidden">보이기</span></button>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="layerDep">
+                        <ul class="layerDeps01">
+                            <li>
+                                <div class="layerDiv">
+                                    <p class="layerName">근린생활시설</p>
+                                    <div class="layerSys">
+                                        <button type="button" class="depsCon"><span class="hidden">펼치기</span></button>
+                                        <button type="button" class="depsSwitch"><span class="hidden">보이기</span></button>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="bgTrans">
+                    <ul class="typeSel">
+                        <li>
+                            <p>지도모드</p>
+                            <div class="inputGroup">
+                                <div class="radioBox">
+                                    <input type="radio" name="rd01" id="rd1" class="hidden" checked="">
+                                    <label for="rd1"></label>
+                                    <label for="rd1">주간</label>
+                                </div>
+                                <div class="radioBox">
+                                    <input type="radio" name="rd01" id="rd2" class="hidden">
+                                    <label for="rd2"></label>
+                                    <label for="rd2">야간</label>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <p>TOC</p>
+                            <div class="inputGroup">
+                                <div class="radioBox">
+                                    <input type="radio" name="rd02" id="rd3" class="hidden" checked="">
+                                    <label for="rd3"></label>
+                                    <label for="rd3">on</label>
+                                </div>
+                                <div class="radioBox">
+                                    <input type="radio" name="rd02" id="rd4" class="hidden">
+                                    <label for="rd4"></label>
+                                    <label for="rd4">off</label>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <p>해상도</p>
+                            <div class="inputGroup">
+                                <div class="radioBox">
+                                    <input type="radio" name="rd03" id="rd5" class="hidden" checked="">
+                                    <label for="rd5"></label>
+                                    <label for="rd5">고해상도</label>
+                                </div>
+                                <div class="radioBox">
+                                    <input type="radio" name="rd03" id="rd6" class="hidden">
+                                    <label for="rd6"></label>
+                                    <label for="rd6">저해상도</label>
+                                </div>
+                                <div class="radioBox">
+                                    <input type="radio" name="rd03" id="rd7" class="hidden">
+                                    <label for="rd7"></label>
+                                    <label for="rd7">기본</label>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="btnArea center">
+                        <button type="button" class="type01 bgWhite" title="삭제">
+                            <span>삭제</span>
+                        </button>
+                        <button type="button" class="type01 bgWhite" title="수정">
+                            <span>수정</span>
+                        </button>
+                        <button type="button" class="type01 bgTrans" title="저장">
+                            <span>저장</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </acticle>
+    <!-- //초기 설정 수정 팝업 -->
+</body>
+</html>

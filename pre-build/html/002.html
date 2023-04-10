@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    @@include('include/head.html') 
+</head>
+<body>
+
+    <div id="wrap">
+        <!--header-->
+        <header id="header">
+            @@include('include/header.html')
+        </header>
+        <!--header-->
+
+        <!--container-->
+        <main id="container">
+            <div class="setTit">
+                <div class="title">
+                    <h2>레이어 관리</h2>
+                </div>
+            </div>
+            <div id="content">
+                <div id="lnb">
+                    <div class="lnbTit">
+                        <p>3D지도 관리</p>
+                    </div>
+                    <div class="lnbCont">
+                        <ul>
+                            <li><a href="#none">초기설정 관리</a></li>
+                            <li class="active"><a href="#none">레이어 관리</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="cont">
+                    <div class="box active">
+                        <div class="btnArea end">
+                            <button type="button" class="type01 bgTrans" title="등록"><span>등록</span></button>
+                        </div>
+                        <div class="table">
+                            <table>
+                                <caption>레이어 관리로 순번, 종류, 레이어 명, 작업상태, 완료일, 등록자, 등록일을 제공합니다</caption>
+                                <colgroup>
+                                    <col style="width: 100px;">
+                                    <col style="width: 150px;">
+                                    <col style="width: auto;">
+                                    <col style="width: 150px;">
+                                    <col style="width: 150px;">
+                                    <col style="width: 150px;">
+                                    <col style="width: 150px;">
+                                </colgroup>
+                                <thead>
+                                    <tr>
+                                        <th scope="col">순번</th>
+                                        <th scope="col">종류</th>
+                                        <th scope="col">레이어 명</th>
+                                        <th scope="col">작업상태</th>
+                                        <th scope="col">완료일</th>
+                                        <th scope="col">등록자</th>
+                                        <th scope="col">등록일</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>3DS</td>
+                                        <td>타일 레이어</td>
+                                        <td>발행</td>
+                                        <td>2022-09-13</td>
+                                        <td>홍길동</td>
+                                        <td>2022-09-13</td>
+                                    </tr>
+                                    <tr>
+                                        <td>2</td>
+                                        <td>3DS</td>
+                                        <td>타일 레이어</td>
+                                        <td>발행</td>
+                                        <td>2022-09-13</td>
+                                        <td>홍길동</td>
+                                        <td>2022-09-13</td>
+                                    </tr>
+                                    <tr>
+                                        <td>3</td>
+                                        <td>3DS</td>
+                                        <td>타일 레이어</td>
+                                        <td>발행</td>
+                                        <td>2022-09-13</td>
+                                        <td>홍길동</td>
+                                        <td>2022-09-13</td>
+                                    </tr>
+                                    <tr>
+                                        <td>4</td>
+                                        <td>3DS</td>
+                                        <td>타일 레이어</td>
+                                        <td>발행</td>
+                                        <td>2022-09-13</td>
+                                        <td>홍길동</td>
+                                        <td>2022-09-13</td>
+                                    </tr>
+                                    <tr>
+                                        <td>5</td>
+                                        <td>3DS</td>
+                                        <td>타일 레이어</td>
+                                        <td>발행</td>
+                                        <td>2022-09-13</td>
+                                        <td>홍길동</td>
+                                        <td>2022-09-13</td>
+                                    </tr>
+                                    <tr>
+                                        <td>6</td>
+                                        <td>3DS</td>
+                                        <td>타일 레이어</td>
+                                        <td>발행</td>
+                                        <td>2022-09-13</td>
+                                        <td>홍길동</td>
+                                        <td>2022-09-13</td>
+                                    </tr>
+                                    <tr>
+                                        <td>7</td>
+                                        <td>3DS</td>
+                                        <td>타일 레이어</td>
+                                        <td>발행</td>
+                                        <td>2022-09-13</td>
+                                        <td>홍길동</td>
+                                        <td>2022-09-13</td>
+                                    </tr>
+                                    <tr>
+                                        <td>8</td>
+                                        <td>3DS</td>
+                                        <td>타일 레이어</td>
+                                        <td>발행</td>
+                                        <td>2022-09-13</td>
+                                        <td>홍길동</td>
+                                        <td>2022-09-13</td>
+                                    </tr>
+                                    <tr>
+                                        <td>9</td>
+                                        <td>3DS</td>
+                                        <td>타일 레이어</td>
+                                        <td>발행</td>
+                                        <td>2022-09-13</td>
+                                        <td>홍길동</td>
+                                        <td>2022-09-13</td>
+                                    </tr>
+                                    <tr>
+                                        <td>10</td>
+                                        <td>3DS</td>
+                                        <td>타일 레이어</td>
+                                        <td>발행</td>
+                                        <td>2022-09-13</td>
+                                        <td>홍길동</td>
+                                        <td>2022-09-13</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <div class="pagination">
+                                <button type="button" class="btnFirst" title="맨앞으로">
+                                    <span class="hidden">맨앞으로</span>
+                                </button>
+                                <button type="button" class="btnPrev" title="이전페이지">
+                                    <span class="hidden">이전페이지</span>
+                                </button>
+                                <a href="#" class="active" title="1">1</a>
+                                <a href="#" title="2">2</a>
+                                <a href="#" title="3">3</a>
+                                <a href="#" title="4">4</a>
+                                <a href="#" title="5">5</a>
+                                <a href="#" title="6">6</a>
+                                <a href="#" title="7">7</a>
+                                <a href="#" title="8">8</a>
+                                <a href="#" title="9">9</a>
+                                <a href="#" title="10">10</a>
+                                <button type="button" class="btnNext" title="다음페이지">
+                                    <span class="hidden">다음페이지</span>
+                                </button>
+                                <button type="button" class="btnLast" title="맨뒤로">
+                                    <span class="hidden">맨뒤로</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <!--//container-->
+
+        <!--footer-->
+        <footer id="footer">
+            @@include('include/footer.html')
+        </footer>
+        <!--//footer-->
+    </div>
+</body>
+</html>
