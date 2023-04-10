@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0" >
+<meta name="format-detection" content="telephone=no">
+<meta name="author" content="">
+<meta name="description" content="">
+
+<!-- 오픈그래프 이미지의 경우 최소한 600 x 315 px은 되어야 하며, 1200 x 630 px을 권장함 -->
+<meta property="og:image" content="">
+<meta property="og:title" content="">
+<meta property="og:description" content="">
+<meta property="og:url" content="">
+<!-- 다음의 태그는 필수는 아니지만, 포함하는 것을 추천함 -->
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+
+<link rel="stylesheet" href="../lib/swiper/css/swiper.css">
+<link rel="stylesheet" href="../lib/jquery-ui.css">
+<link rel="stylesheet" href="../css/common.css">
+<link rel="stylesheet" href="../css/hover.css">
+<script src="../lib/jquery-1.12.4.js"></script>
+<script src="../lib/jquery-ui.js"></script>
+<script src="../lib/swiper/js/swiper.js"></script>
+<script src="../js/ui.js"></script>
+
+<title>KGEO 3D ADMIN</title>
+
+ 
+</head>
+<body>
+
+    <div id="wrap">
+        <!--header-->
+        <header id="header">
+            <div class="header">
+    <h1 class="logo">
+        <a href="#none">
+            <img src="../images/common/logo.png" alt="K-Geo플랫폼 로고">
+        </a>
+    </h1>
+</div>
+        </header>
+        <!--header-->
+
+        <!--container-->
+        <main id="container">
+            <div class="setTit">
+                <div class="title">
+                    <h2>레이어 관리</h2>
+                </div>
+            </div>
+            <div id="content">
+                <div id="lnb">
+                    <div class="lnbTit">
+                        <p>3D지도 관리</p>
+                    </div>
+                    <div class="lnbCont">
+                        <ul>
+                            <li><a href="#none">초기설정 관리</a></li>
+                            <li class="active"><a href="#none">레이어 관리</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="cont">
+                    <div class="box">
+                        <div class="table type02">
+                            <table>
+                                <caption>레이어관리로 타일레이어명, 레이어종류, 작업상태, 파일명, 좌표계, 최대 레벨, 최소 레벨, 최대 경도, 최소 경도, 최대 위도, 최소 위도, 타일 설명을 제공합니다</caption>
+                                <colgroup>
+                                    <col style="width: 140px;">
+                                    <col style="width: 540px;">
+                                    <col style="width: 140px;">
+                                    <col style="width: auto;">
+                                </colgroup>
+                                <tbody>
+                                    <tr>
+                                        <th scope="row">타일레이어명</th>
+                                        <td>내용내용내용</td>
+                                        <th scope="row">레이어종류</th>
+                                        <td>내용내용내용</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">작업상태</th>
+                                        <td colspan="3">
+                                            <div class="progressBar" id="prgressBar">
+                                                <div class="bar">
+                                                    <div class="progress" id="progress" style="width: 300px;"></div>
+                                                </div>
+                                                <p class="lodingTxt">작업중</p>
+                                                <p>(</p>
+                                                <p class="percent" id="percent">100%</p>
+                                                <p>)</p>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">파일명</th>
+                                        <td>내용내용내용</td>
+                                        <th scope="row">좌표계</th>
+                                        <td>내용내용내용</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">최대 레벨</th>
+                                        <td>내용내용내용</td>
+                                        <th scope="row">최소 레벨</th>
+                                        <td>내용내용내용</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">최대 경도</th>
+                                        <td>내용내용내용</td>
+                                        <th scope="row">최소 경도</th>
+                                        <td>내용내용내용</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">최대 위도</th>
+                                        <td>내용내용내용</td>
+                                        <th scope="row">최소 위도</th>
+                                        <td>내용내용내용</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">타일 설명</th>
+                                        <td colspan="3">내용내용내용</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <!-- //box -->
+                    <div class="box">
+                        <div class="titArea">
+                            <h4 class="titleSec type01">
+                                <strong>미리보기</strong>
+                            </h4>
+                        </div>
+                        <div class="boxCont" style="height: 320px; background-color: #eee;">
+                            <!-- 미리보기 -->
+                        </div>
+                        <div class="btnArea center">
+                            <button type="button" class="type01 bgWhite" title="삭제"><span>삭제</span></button>
+                            <button type="button" class="type01 bgTrans" title="발행"><span>발행</span></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <!--//container-->
+
+        <!--footer-->
+        <footer id="footer">
+            
+        </footer>
+        <!--//footer-->
+    </div>
+
+    <script>
+    (function(){
+        var percent = document.getElementById('percent');
+        var pcounter = 1;
+        var progress = document.getElementById('progress');
+        var prcounter = 3;
+        var id = setInterval(frame, 10);
+        function frame() {
+            if(pcounter == 100) {
+            clearInterval(id);
+            } else {
+            pcounter +=1;
+                prcounter +=3;
+                percent.innerHTML = pcounter+'%';
+                progress.style.width = prcounter +'px';
+            
+            //console.log(pcounter);
+            console.log(prcounter);
+            }
+        }
+    })();
+    </script>
+</body>
+</html>
